@@ -12,7 +12,7 @@ namespace aspnetApi.Services
         {
             _context = context;
         }
-        public void AddBookWithAuthors(BookVM book)
+        public Book AddBookWithAuthors(BookVM book)
         {
             var _book = new Book()
             {
@@ -39,6 +39,7 @@ namespace aspnetApi.Services
                 _context.Book_Authors.Add(_book_author);
                 _context.SaveChanges();
             }
+            return _book;
         }
 
         public List<Book> GetAllBooks(string sortBy, string searchString)

@@ -1,5 +1,3 @@
 {
-    "dotnet-test-explorer.testProjectPath": "./aspnetApi.test",
-    "dotnet-test-explorer.testArguments": "--collect:\"XPlat Code Coverage\"",
-    "coverage-gutters.coverageFileNames": ["coverage.json"]
+    "dotnet-test-explorer.testProjectPath": "./aspnetApi.test"
 }

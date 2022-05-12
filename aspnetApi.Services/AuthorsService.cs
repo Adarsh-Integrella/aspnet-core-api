@@ -13,7 +13,7 @@ namespace aspnetApi.Services
             _context = context;
         }
 
-        public void AddAuthor(AuthorVM author)
+        public Author AddAuthor(AuthorVM author)
         {
             var _author = new Author()
             {
@@ -21,6 +21,7 @@ namespace aspnetApi.Services
             };
             _context.Authors.Add(_author);
             _context.SaveChanges();
+            return _author;
         }
         public void DeleteAuthorById(int AuthorId)
         {
